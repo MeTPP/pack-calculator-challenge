@@ -56,7 +56,7 @@ func main() {
 		defer cancel()
 		if err := srv.Shutdown(ctx); err != nil {
 			slog.Error("graceful shutdown failed", "error", err)
-			srv.Close()
+			_ = srv.Close()
 		}
 	}
 
