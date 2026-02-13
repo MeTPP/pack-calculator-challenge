@@ -1,0 +1,11 @@
+.git
+.github
+.idea
+*.md
+*.png
+*.jpeg
+*.pdf
+Makefile
+docker-compose.yml
+*_test.go
+**/*_test.go
